@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navMenu {
+  position: absolute;
+  top: 10%;
+  left: 75%;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+
+  background-color: rgb(33, 63, 3);
+  border: 2px solid white;
+  border-radius: 8px;
+  width: 500px;
+}
+
+.navMenu a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 80px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+
+  padding: 8px 7px;
+  border-radius: 4px;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #ffef0b;
+}
+
+.navMenu .dot {
+  width: 80px;
+  height: 6px;
+  background: #ffef0b;
+  border-radius: 10%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(85px);
+  transform: translateX(85px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(170px);
+  transform: translateX(170px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(285px);
+  transform: translateX(285px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(145, 89, 5);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+}
+
+/* .navMenu {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  background: #ffef0b;
+  padding: 15px 40px;
+  border-radius: 4px;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+} */
